@@ -1,0 +1,108 @@
+@media(max-width:1020px) {
+    .text-block-help-info h3 {
+        font-size: 34px;
+        line-height: 64px;
+    }
+
+    .text-block-help-info p {
+        font-size: 26px;
+        line-height: 23px;
+        margin-bottom: 30px;
+    }
+    .information-text-block {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .footer-info-list {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .footer-info img {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    header>.container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-block {
+        flex-wrap: wrap;
+    }
+
+    .info-block>.figure {
+        display: none;
+    }
+
+    .info-block img {
+        width: 100%;
+    }
+
+    .category-block {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .planets-type-block {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .information-text-block {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .information-text-item {
+        padding: 0;
+    }
+
+    .contact-us {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .contact-us .figure {
+        display: none;
+    }
+
+    .help-info-block {
+        width: 100%;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info-list>div {
+        min-width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width:480px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "info-block"
+            "planets-type-block"
+            "about-block"
+            "category-block"
+            "contact-us"
+            "information-text-block"
+            "footer-info"
+            "footer";
+    }
+}
+
+@media all and (-ms-high-contrast:none)
+{
+    .d-grid{
+        display: block;
+        margin: 0 auto;
+    }
+    .nutrition-type-item{
+        max-width: 320px;
+    }
+}
