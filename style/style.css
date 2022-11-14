@@ -131,12 +131,12 @@ header>.container {
 }
 
 .menu_item {
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     display: inline-block;
     padding-bottom: 4px;
     color: #f1c40f;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .active {
@@ -155,6 +155,39 @@ header>.container {
     border: none;
 }
 
+.info-block {
+    background: #f39c12;
+}
+
+.info-text {
+    padding: 0 5%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-text h3 {
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.006em;
+}
+
+.info-text p {
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.figure {
+    width: 500px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.universe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media(max-width:768px) {
     header>.container {
         flex-direction: column;
@@ -165,7 +198,7 @@ header>.container {
         flex-wrap: wrap;
     }
 
-    .info-block>figure {
+    .info-block>.figure {
         display: none;
     }
 
